@@ -1,0 +1,54 @@
+#slider img{
+    vertical-align: bottom;
+}
+#slider{
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+#imageA,#texteA,#imageB,#texteB{
+    position: absolute;
+}
+#imageA,#imageB{
+    width: 100%;
+}
+#texteA,#textB{
+    width: 100%;
+
+}
+.text1{
+    width: fit-content;
+    backdrop-filter: blur(5px);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.text2{
+    width: fit-content;
+    padding: .5rem;
+    margin-left: 1rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    backdrop-filter: blur(5px);
+}
+.trans{
+    padding: .5rem;
+    transition: all 0.8s ease-in;
+}
+.swipeLeft{
+    transform: translateX(-100%);
+}
+.swipeRight{
+    transform: translateX(100%);
+}
+.swipeUp{
+    transform: translateY(-100%);
+}
+.swipeDown{
+    transform: translateY(100%);
+}
+.fadeOut{
+    opacity: 0;
+}
