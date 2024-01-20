@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserVinylController!{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+<h1>Notre liste de Vinyl 1977</h1>
+{% for vinyl in tousLesVinylesDe1977 %}
+    <div>{{vinyl.titre}}</div>
+{% endfor %}
+</div>
+{% endblock %}
